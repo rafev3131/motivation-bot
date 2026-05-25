@@ -32,7 +32,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     subscribed_chats.add(chat_id)
 
     await update.message.reply_text(
-        "Привет! Я буду каждые 5 минут  присылать тебе мотивирующее сообщение."
+        "Привет! Я буду каждые 5 минут  присылать тебе сообщние."
     )
 
 
