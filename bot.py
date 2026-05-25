@@ -65,10 +65,10 @@ def main():
     app.add_handler(CommandHandler("stop", stop))
 
     app.job_queue.run_repeating(
-        send_motivation,
-        interval=3600,
-        first=10
-    )
+    send_motivation,
+    interval=300,
+    first=10
+)
 
     print("Бот запущен...")
     app.run_polling()
